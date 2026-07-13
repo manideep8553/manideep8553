@@ -12,34 +12,4 @@ I'm a Computer Science (AI & ML) student passionate about full-stack development
 # 📊 GitHub Stats:
 ![](https://streak-stats.demolab.com/?user=manideep8553&theme=dark&hide_border=false)<br/>
 
-# 🐍 Snake Eating Contributions
-name: Generate Snake
-
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-
-permissions:
-  contents: write
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: manideep8553
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      - uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
