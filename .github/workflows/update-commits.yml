@@ -1,0 +1,32 @@
+name: Update Total Commits Badge
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Get total commits
+        run: |
+          COMMITS=$(curl -s "https://api.github.com/search/commits?q=author:manideep8553" \
+          -H "Accept: application/vnd.github.cloak-preview" | jq '.total_count')
+          echo "COMMITS=$COMMITS" >> $GITHUB_ENV
+
+      - name: Update README
+        run: |
+          sed -i "s/<!--COMMITS-->.*<!--\/COMMITS-->/<!--COMMITS-->${COMMITS}<!--\/COMMITS-->/" README.md
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update total commits"
