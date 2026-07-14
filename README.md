@@ -12,10 +12,6 @@ I'm a Computer Science (AI & ML) student passionate about full-stack development
 # 📊 GitHub Stats:
 ![](https://streak-stats.demolab.com/?user=manideep8553&theme=dark&hide_border=false)<br/>
 
-## 📊 GitHub Statistics
-
-**Total Commits:** <!--COMMITS-->0<!--/COMMITS-->
-
 
 ## 🐍 Snake Eating Contributions
 
