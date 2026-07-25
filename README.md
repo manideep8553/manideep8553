@@ -1,6 +1,6 @@
 # 💫 About Me:
 I'm a Computer Science (AI & ML) student passionate about full-stack development, artificial intelligence, and building real-world applications. I enjoy solving complex problems, developing scalable web applications, and continuously learning new technologies. With experience in Java, React, Node.js, Python, and AI/ML, I'm eager to contribute to innovative projects and grow as a software engineer.<br>
-
+ 
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kalva-manideep19/)
